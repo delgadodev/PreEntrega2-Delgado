@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
 body {
   background-color: #141414;
   font-family: "Poppins", sans-serif;
@@ -157,18 +167,6 @@ footer {
 
 /* Lanzamientos page */
 
-.lanzamientos {
-  margin: 120px 0;
-}
-
-.lanzamientos h1 {
-  margin-bottom: 100px;
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .lanzamientos article {
   padding: 10px;
 }
@@ -271,4 +269,48 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
+}
+
+/*  NOSOTROS  */
+
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nosotros-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* TIENDA */
+
+.productos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-items: center;
+}
+
+.card .imagen-producto {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+
+.card:nth-child(1) .imagen-producto {
+  background-image: url("../img/productos/producto1.webp");
+}
+
+.card:nth-child(2) .imagen-producto {
+  background-image: url("../img/productos/producto2.webp");
+}
+
+.card:nth-child(3) .imagen-producto {
+  background-image: url("../img/productos/producto3.webp");
 }
